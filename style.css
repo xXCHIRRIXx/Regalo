@@ -61,4 +61,22 @@ body {
     border: 2px solid #ffe4f0;
     box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
   }
+
+  .corazones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* espacio entre las imágenes */
+    margin: 20px 0;
+  }
   
+  .corazones img {
+    width: 80px; /* o el tamaño que prefieras */
+    height: auto;
+  }
+
+  .corazonesc {
+    font-size: 115px;
+    margin: 0;
+    padding: 0;
+  }

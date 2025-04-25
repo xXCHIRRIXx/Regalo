@@ -2,28 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Para Ti 💖</title>
+  <title>Para Ti Alicia 🤍🖤</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <audio controls autoplay loop class="audio-player">
-      <source src="cancion.mp3" type="audio/mpeg">
-      Tu navegador no soporta el audio.
-    </audio>
+    <audio autoplay loop style="display:none"> 
+        <source src="cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>      
 
     <h1 class="titulo">Eres mi regalo favorito 🎁</h1>
 
-    <pre class="corazon">
-      ,d88b.d88b,
-      88888888888
-      `Y8888888Y'
-        `Y888Y'  
-          `Y'   
-    </pre>
+    <div class="corazones">
+        <p class="corazonesc">🤍🖤</p>
+      </div>      
 
     <div class="mensaje">
-      <p>Escribe aquí el mensaje especial para ella 🥰</p>
+      <p>Hoy celebro tu vida, Shomii. Tu risa, tu forma única de ver el mundo y la suerte inmensa que tengo de compartir tantos momentos contigo. Cada una de estas fotos es un pequeño testigo de todo lo que hemos vivido juntos, y aún así, siento que apenas estamos comenzando 🤍🖤
+
+        Gracias por ser mi compañera, mi refugio y mi alegría. Que este nuevo año te traiga tanta felicidad como la que tú me das cada día.
+        
+        Te amo.</p>
     </div>
 
     <div class="collage">
@@ -99,5 +99,15 @@
         <img src="foto70.jpeg" alt="Foto 70">
       </div>          
   </div>
+  <script>
+    document.addEventListener("click", () => {
+      const audio = document.querySelector("audio");
+      audio.muted = false;
+      audio.play().catch((e) => {
+        console.warn("El navegador bloqueó el autoplay con sonido.");
+      });
+    }, { once: true });
+  </script>
+  
 </body>
 </html>
